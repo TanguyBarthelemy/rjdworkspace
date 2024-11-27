@@ -190,7 +190,7 @@ be sure that the regressors are also in the destination workspace.</p>
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://jdemetra.github.io/rjdemetra/" class="external-link">"RJDemetra"</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://rjdverse.github.io/rjdemetra/" class="external-link">"RJDemetra"</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">dir_ws</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">template_ws</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"extdata"</span>, package <span class="op">=</span> <span class="st">"rjdworkspace"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>                         <span class="st">"WS"</span><span class="op">)</span></span></span>
@@ -213,8 +213,8 @@ be sure that the regressors are also in the destination workspace.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Successful copy!</span>
 <span class="r-in"><span><span class="va">path_ws_from</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">dir_ws</span>, <span class="st">"ws_input.xml"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">path_ws_to</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/file.path.html" class="external-link">file.path</a></span><span class="op">(</span><span class="va">dir_ws</span>, <span class="st">"ws_output.xml"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">ws_input</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/load_workspace.html" class="external-link">load_workspace</a></span><span class="op">(</span><span class="va">path_ws_from</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">ws_output</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/load_workspace.html" class="external-link">load_workspace</a></span><span class="op">(</span><span class="va">path_ws_to</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ws_input</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/load_workspace.html" class="external-link">load_workspace</a></span><span class="op">(</span><span class="va">path_ws_from</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ws_output</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/load_workspace.html" class="external-link">load_workspace</a></span><span class="op">(</span><span class="va">path_ws_to</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Existing SAP</span></span></span>
 <span class="r-in"><span><span class="fu">transfer_series</span><span class="op">(</span></span></span>
@@ -342,7 +342,7 @@ be sure that the regressors are also in the destination workspace.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Done!</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">RJDemetra</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/save_workspace.html" class="external-link">save_workspace</a></span><span class="op">(</span>workspace <span class="op">=</span> <span class="va">ws_output</span>, file <span class="op">=</span> <span class="va">path_ws_to</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">RJDemetra</span><span class="fu">::</span><span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/save_workspace.html" class="external-link">save_workspace</a></span><span class="op">(</span>workspace <span class="op">=</span> <span class="va">ws_output</span>, file <span class="op">=</span> <span class="va">path_ws_to</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
@@ -358,7 +358,7 @@ be sure that the regressors are also in the destination workspace.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
       </footer></div>

@@ -117,22 +117,22 @@
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://jdemetra.github.io/rjdemetra/" class="external-link">"RJDemetra"</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://rjdverse.github.io/rjdemetra/" class="external-link">"RJDemetra"</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="va">sa_x13</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/x13.html" class="external-link">jx13</a></span><span class="op">(</span>series <span class="op">=</span> <span class="va">ipi_c_eu</span><span class="op">[</span>, <span class="st">"FR"</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">sa_ts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/tramoseats.html" class="external-link">jtramoseats</a></span><span class="op">(</span>series <span class="op">=</span> <span class="va">ipi_c_eu</span><span class="op">[</span>, <span class="st">"FR"</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sa_x13</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/x13.html" class="external-link">jx13</a></span><span class="op">(</span>series <span class="op">=</span> <span class="va">ipi_c_eu</span><span class="op">[</span>, <span class="st">"FR"</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sa_ts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/tramoseats.html" class="external-link">jtramoseats</a></span><span class="op">(</span>series <span class="op">=</span> <span class="va">ipi_c_eu</span><span class="op">[</span>, <span class="st">"FR"</span><span class="op">]</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="va">wk</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/new_workspace.html" class="external-link">new_workspace</a></span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">sap1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/new_workspace.html" class="external-link">new_multiprocessing</a></span><span class="op">(</span>workspace <span class="op">=</span> <span class="va">wk</span>, name <span class="op">=</span> <span class="st">"sap-1"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">wk</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/new_workspace.html" class="external-link">new_workspace</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sap1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/new_workspace.html" class="external-link">new_multiprocessing</a></span><span class="op">(</span>workspace <span class="op">=</span> <span class="va">wk</span>, name <span class="op">=</span> <span class="st">"sap-1"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/add_sa_item.html" class="external-link">add_sa_item</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/add_sa_item.html" class="external-link">add_sa_item</a></span><span class="op">(</span></span></span>
 <span class="r-in"><span>    workspace <span class="op">=</span> <span class="va">wk</span>,</span></span>
 <span class="r-in"><span>    multiprocessing <span class="op">=</span> <span class="st">"sap-1"</span>,</span></span>
 <span class="r-in"><span>    sa_obj <span class="op">=</span> <span class="va">sa_x13</span>,</span></span>
 <span class="r-in"><span>    name <span class="op">=</span> <span class="st">"tramo seats"</span></span></span>
 <span class="r-in"><span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="va">sa_item1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RJDemetra/man/get_object.html" class="external-link">get_object</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">sap1</span>, pos <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sa_item1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rjdverse.github.io/rjdemetra/reference/get_object.html" class="external-link">get_object</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">sap1</span>, pos <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">new_sa_item</span> <span class="op">&lt;-</span> <span class="fu">set_spec</span><span class="op">(</span>sa_item <span class="op">=</span> <span class="va">sa_item1</span>, spec <span class="op">=</span> <span class="va">sa_ts</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># The first sa_item is now seasonally adjusted with TRAMO-SEATS</span></span></span>
@@ -152,7 +152,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
       </footer></div>
