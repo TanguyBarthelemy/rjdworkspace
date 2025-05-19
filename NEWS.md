@@ -8,11 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+* Function `update_xml_file` updated with a REGEX
+
+
 ## [1.1.9] - 2025-01-16
 
 ### Fixed
 
 * changing the meta-character &amp; into & in `update_xml_file`
+
 
 ## [1.1.8] - 2025-01-09
 
@@ -99,6 +105,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     * `update_metadata_roughly`
     * `set_metadata` for SA ITEM
 * the function `replace_series` has an new argument `mp_from_name` and `mp_to_name` to specify the multipreprocessing in which to search for series
+
 
 [Unreleased]: https://github.com/InseeFrLab/rjdworkspace/compare/v1.1.9...HEAD
 [1.1.9]: https://github.com/InseeFrLab/rjdworkspace/compare/v1.1.8...v1.1.9
