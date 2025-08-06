@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-* Function `update_path()`
+* Function `update_path()` is now based on the .xml files and not on the SAP position or name
 
 
 ## [1.1.9] - 2025-01-16
